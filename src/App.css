@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: monospace, sans-serif;
+  height: 100vh;
+  padding: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawing .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawing .cell {
+  width: 1.5em;
+  height: 1.5em;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drawing .cell.filled {
+  background: black;
+  border-color: black;
+}
+
+.drawing .cell.no-border {
+  border: none;
+}
+
+.input {
+  margin: 2em auto;
+}
+
+.input input, .input button {
+  padding: 1em;
+  border: 1px solid #666;
+}
+
+.desc {
+  font-size: 0.75em;
+}
+
+.desc table {
+  max-width: 800px;
+  margin: 2em auto;
+  border: none;
+}
+
+.desc table th {
+  font-weight: 700;
+}
+
+.desc table td {
+  padding: 0.25em 0.5em;
+  border-top: 1px solid #ddd;
+}
+
+.desc table td:first-child {
+  white-space: nowrap;
+}

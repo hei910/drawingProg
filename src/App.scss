@@ -1,0 +1,78 @@
+$dark: #666;
+$light: #ddd;
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: monospace, sans-serif;
+  height: 100vh;
+  padding: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.drawing {
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cell {
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid $light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &.filled {
+      background: black;
+      border-color: black;
+    }
+    &.no-border {
+      border: none;
+    }
+  }
+}
+
+.input {
+  margin: 2em auto;
+
+  input, button {
+    padding: 1em;
+    border: 1px solid $dark;
+  }
+}
+
+.desc {
+  font-size: 0.75em;
+
+  table {
+    max-width: 800px;
+    margin: 2em auto;
+    border: none;
+
+    th {
+      font-weight: 700;
+    }
+    td {
+      padding: 0.25em 0.5em;
+      border-top: 1px solid $light;
+    }
+    td:first-child {
+      white-space: nowrap;
+    }
+  }
+}
